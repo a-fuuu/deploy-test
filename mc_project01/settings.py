@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'visualization',
     'main',
     'comment',
-    'qna'
 ]
 
 MIDDLEWARE = [
