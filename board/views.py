@@ -7,12 +7,12 @@ def home(request):
     boards = Board.objects.all()
     return render(request, 'board/home.html', {'boards':boards})
 
+def new(request):
+    return render(request, 'board/new.html')
+
 def detail(request, id):
     board = get_object_or_404(Board, pk = id)
     return render(request, 'board/detail.html',{'board':board})
-
-def new(request):
-    return render(request, 'board/new.html')
 
 def create(request):
     new_board = Board()
