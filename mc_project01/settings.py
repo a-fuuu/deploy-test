@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'visualization',
     'main',
     'comment',
+    'board',
 ]
 
 MIDDLEWARE = [
